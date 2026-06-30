@@ -1,0 +1,1720 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Book2_17826729225890' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Transformed_Housing_Data2' inline='true' name='federated.052uotz0snp4p218ejlew15012v6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Transformed_Housing_Data2' name='textscan.05y83t70gr2wol166fjhr1a3cfcu'>
+            <connection class='textscan' directory='C:/Users/shaik/OneDrive/Documents' filename='Transformed_Housing_Data2.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.05y83t70gr2wol166fjhr1a3cfcu' name='Transformed_Housing_Data2.csv' table='[Transformed_Housing_Data2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='real' name='Sale_Price' ordinal='0' />
+            <column datatype='integer' name='No of Bedrooms' ordinal='1' />
+            <column datatype='real' name='No of Bathrooms' ordinal='2' />
+            <column datatype='real' name='Flat Area (in Sqft)' ordinal='3' />
+            <column datatype='real' name='Lot Area (in Sqft)' ordinal='4' />
+            <column datatype='real' name='No of Floors' ordinal='5' />
+            <column datatype='integer' name='No of Times Visited' ordinal='6' />
+            <column datatype='integer' name='Overall Grade' ordinal='7' />
+            <column datatype='real' name='Area of the House from Basement (in Sqft)' ordinal='8' />
+            <column datatype='integer' name='Basement Area (in Sqft)' ordinal='9' />
+            <column datatype='integer' name='Age of House (in Years)' ordinal='10' />
+            <column datatype='real' name='Latitude' ordinal='11' />
+            <column datatype='real' name='Longitude' ordinal='12' />
+            <column datatype='real' name='Living Area after Renovation (in Sqft)' ordinal='13' />
+            <column datatype='integer' name='Lot Area after Renovation (in Sqft)' ordinal='14' />
+            <column datatype='integer' name='Years Since Renovation' ordinal='15' />
+            <column datatype='integer' name='Condition_of_the_House_Excellent' ordinal='16' />
+            <column datatype='integer' name='Condition_of_the_House_Fair' ordinal='17' />
+            <column datatype='integer' name='Condition_of_the_House_Good' ordinal='18' />
+            <column datatype='integer' name='Condition_of_the_House_Okay' ordinal='19' />
+            <column datatype='integer' name='Ever_Renovated_Yes' ordinal='20' />
+            <column datatype='integer' name='Waterfront_View_Yes' ordinal='21' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_1' ordinal='22' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_2' ordinal='23' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_3' ordinal='24' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_4' ordinal='25' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_5' ordinal='26' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_6' ordinal='27' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_7' ordinal='28' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_8' ordinal='29' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_9' ordinal='30' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sale_Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sale_Price]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Sale_Price</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No of Bedrooms</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[No of Bedrooms]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>No of Bedrooms</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No of Bathrooms</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[No of Bathrooms]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>No of Bathrooms</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Flat Area (in Sqft)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Flat Area (in Sqft)]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Flat Area (in Sqft)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lot Area (in Sqft)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lot Area (in Sqft)]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Lot Area (in Sqft)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No of Floors</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[No of Floors]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>No of Floors</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No of Times Visited</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[No of Times Visited]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>No of Times Visited</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Overall Grade</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Overall Grade]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Overall Grade</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area of the House from Basement (in Sqft)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Area of the House from Basement (in Sqft)]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Area of the House from Basement (in Sqft)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Basement Area (in Sqft)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Basement Area (in Sqft)]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Basement Area (in Sqft)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age of House (in Years)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age of House (in Years)]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Age of House (in Years)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Living Area after Renovation (in Sqft)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Living Area after Renovation (in Sqft)]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Living Area after Renovation (in Sqft)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lot Area after Renovation (in Sqft)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lot Area after Renovation (in Sqft)]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Lot Area after Renovation (in Sqft)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Years Since Renovation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Years Since Renovation]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Years Since Renovation</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition_of_the_House_Excellent</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Condition_of_the_House_Excellent]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Condition_of_the_House_Excellent</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition_of_the_House_Fair</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Condition_of_the_House_Fair]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Condition_of_the_House_Fair</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition_of_the_House_Good</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Condition_of_the_House_Good]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Condition_of_the_House_Good</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition_of_the_House_Okay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Condition_of_the_House_Okay]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Condition_of_the_House_Okay</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ever_Renovated_Yes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ever_Renovated_Yes]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Ever_Renovated_Yes</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Waterfront_View_Yes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Waterfront_View_Yes]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Waterfront_View_Yes</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_1]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_1</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_2]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_2</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_3]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_3</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_4]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_4</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_5]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_5</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_6]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_6</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_7]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_7</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_8]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_8</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_9</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_9]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_9</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.052uotz0snp4p218ejlew15012v6].[__tableau_internal_object_id__].[cnt:Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608:qk]&quot;' value='Count of Transformed_Housing_Data2' />
+        </aliases>
+      </column>
+      <column aggregation='None' caption='Age of House (in Years) (bin)' datatype='integer' name='[Age of House (in Years) (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[Age of House (in Years)]' peg='0' size='10' />
+      </column>
+      <column datatype='integer' name='[Age of House (in Years)]' role='measure' type='quantitative' />
+      <column caption='Ever Renovated Yes' datatype='integer' name='[Ever_Renovated_Yes]' role='measure' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='real' name='[No of Bathrooms]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[No of Bedrooms]' role='measure' type='quantitative' />
+      <column datatype='real' name='[No of Floors]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Sale Price (bin)' datatype='integer' name='[Sale Price (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='4' formula='[Sale_Price]' peg='0' size='50000' />
+      </column>
+      <column caption='Sale Price' datatype='real' name='[Sale_Price]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Years Since Renovation (bin)' datatype='integer' name='[Years Since Renovation (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[Years Since Renovation]' peg='0' size='10' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Years Since Renovation]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zipcode_Group_Zipcode_Group_1]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zipcode_Group_Zipcode_Group_2]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zipcode_Group_Zipcode_Group_3]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zipcode_Group_Zipcode_Group_4]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zipcode_Group_Zipcode_Group_5]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zipcode_Group_Zipcode_Group_6]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zipcode_Group_Zipcode_Group_7]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zipcode_Group_Zipcode_Group_8]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zipcode_Group_Zipcode_Group_9]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Transformed_Housing_Data2.csv' datatype='table' name='[__tableau_internal_object_id__].[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[No of Bathrooms]' derivation='Avg' name='[avg:No of Bathrooms:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[No of Bedrooms]' derivation='Avg' name='[avg:No of Bedrooms:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[No of Floors]' derivation='Avg' name='[avg:No of Floors:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age of House (in Years) (bin)]' derivation='None' name='[none:Age of House (in Years) (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Years Since Renovation (bin)]' derivation='None' name='[none:Years Since Renovation (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[No of Bathrooms]' derivation='Sum' name='[sum:No of Bathrooms:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[No of Bedrooms]' derivation='Sum' name='[sum:No of Bedrooms:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[No of Floors]' derivation='Sum' name='[sum:No of Floors:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/shaik/AppData/Local/Temp/TableauTemp/#TableauTemp_1bcmyld1lmuuev1f3fgtu09tupt7.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/28/2026 06:51:57 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Sale_Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sale_Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sale_Price</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1975</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No of Bedrooms</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[No of Bedrooms]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>No of Bedrooms</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No of Bathrooms</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[No of Bathrooms]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>No of Bathrooms</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Flat Area (in Sqft)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Flat Area (in Sqft)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Flat Area (in Sqft)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>803</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lot Area (in Sqft)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lot Area (in Sqft)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lot Area (in Sqft)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4553</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No of Floors</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[No of Floors]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>No of Floors</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No of Times Visited</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[No of Times Visited]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>No of Times Visited</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Overall Grade</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Overall Grade]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Overall Grade</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Area of the House from Basement (in Sqft)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Area of the House from Basement (in Sqft)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Area of the House from Basement (in Sqft)</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>719</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Basement Area (in Sqft)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Basement Area (in Sqft)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Basement Area (in Sqft)</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>355</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age of House (in Years)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age of House (in Years)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age of House (in Years)</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>144</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4990</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>903</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Living Area after Renovation (in Sqft)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Living Area after Renovation (in Sqft)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Living Area after Renovation (in Sqft)</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>599</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lot Area after Renovation (in Sqft)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Lot Area after Renovation (in Sqft)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lot Area after Renovation (in Sqft)</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4278</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Years Since Renovation</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Years Since Renovation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Years Since Renovation</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>57</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Condition_of_the_House_Excellent</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Condition_of_the_House_Excellent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Condition_of_the_House_Excellent</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Condition_of_the_House_Fair</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Condition_of_the_House_Fair]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Condition_of_the_House_Fair</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Condition_of_the_House_Good</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Condition_of_the_House_Good]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Condition_of_the_House_Good</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Condition_of_the_House_Okay</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Condition_of_the_House_Okay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Condition_of_the_House_Okay</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ever_Renovated_Yes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Ever_Renovated_Yes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ever_Renovated_Yes</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Waterfront_View_Yes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Waterfront_View_Yes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Waterfront_View_Yes</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zipcode_Group_Zipcode_Group_1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zipcode_Group_Zipcode_Group_1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zipcode_Group_Zipcode_Group_1</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zipcode_Group_Zipcode_Group_2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zipcode_Group_Zipcode_Group_2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zipcode_Group_Zipcode_Group_2</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zipcode_Group_Zipcode_Group_3</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zipcode_Group_Zipcode_Group_3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zipcode_Group_Zipcode_Group_3</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zipcode_Group_Zipcode_Group_4</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zipcode_Group_Zipcode_Group_4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zipcode_Group_Zipcode_Group_4</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zipcode_Group_Zipcode_Group_5</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zipcode_Group_Zipcode_Group_5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zipcode_Group_Zipcode_Group_5</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zipcode_Group_Zipcode_Group_6</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zipcode_Group_Zipcode_Group_6]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zipcode_Group_Zipcode_Group_6</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zipcode_Group_Zipcode_Group_7</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zipcode_Group_Zipcode_Group_7]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zipcode_Group_Zipcode_Group_7</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zipcode_Group_Zipcode_Group_8</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zipcode_Group_Zipcode_Group_8]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zipcode_Group_Zipcode_Group_8</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zipcode_Group_Zipcode_Group_9</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zipcode_Group_Zipcode_Group_9]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zipcode_Group_Zipcode_Group_9</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Years Since Renovation (bin):ok]' palette='color_blind_10_0' type='palette'>
+            <map to='#1170aa'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#57606c'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#5fa2ce'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#7b848f'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#a3acb9'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#a3cce9'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#c85200'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#ffbc79'>
+              <bucket>8</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Age of House (in Years) (bin):ok]' palette='tableau20_10_0' type='palette'>
+            <map to='#499894'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>3</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' palette='tableau20_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.052uotz0snp4p218ejlew15012v6].[avg:No of Bathrooms:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.052uotz0snp4p218ejlew15012v6].[sum:No of Bathrooms:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.052uotz0snp4p218ejlew15012v6].[avg:No of Bedrooms:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.052uotz0snp4p218ejlew15012v6].[sum:No of Floors:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.052uotz0snp4p218ejlew15012v6].[avg:No of Floors:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.052uotz0snp4p218ejlew15012v6].[sum:No of Bedrooms:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Transformed_Housing_Data2.csv' id='Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608'>
+            <properties context=''>
+              <relation connection='textscan.05y83t70gr2wol166fjhr1a3cfcu' name='Transformed_Housing_Data2.csv' table='[Transformed_Housing_Data2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='real' name='Sale_Price' ordinal='0' />
+                  <column datatype='integer' name='No of Bedrooms' ordinal='1' />
+                  <column datatype='real' name='No of Bathrooms' ordinal='2' />
+                  <column datatype='real' name='Flat Area (in Sqft)' ordinal='3' />
+                  <column datatype='real' name='Lot Area (in Sqft)' ordinal='4' />
+                  <column datatype='real' name='No of Floors' ordinal='5' />
+                  <column datatype='integer' name='No of Times Visited' ordinal='6' />
+                  <column datatype='integer' name='Overall Grade' ordinal='7' />
+                  <column datatype='real' name='Area of the House from Basement (in Sqft)' ordinal='8' />
+                  <column datatype='integer' name='Basement Area (in Sqft)' ordinal='9' />
+                  <column datatype='integer' name='Age of House (in Years)' ordinal='10' />
+                  <column datatype='real' name='Latitude' ordinal='11' />
+                  <column datatype='real' name='Longitude' ordinal='12' />
+                  <column datatype='real' name='Living Area after Renovation (in Sqft)' ordinal='13' />
+                  <column datatype='integer' name='Lot Area after Renovation (in Sqft)' ordinal='14' />
+                  <column datatype='integer' name='Years Since Renovation' ordinal='15' />
+                  <column datatype='integer' name='Condition_of_the_House_Excellent' ordinal='16' />
+                  <column datatype='integer' name='Condition_of_the_House_Fair' ordinal='17' />
+                  <column datatype='integer' name='Condition_of_the_House_Good' ordinal='18' />
+                  <column datatype='integer' name='Condition_of_the_House_Okay' ordinal='19' />
+                  <column datatype='integer' name='Ever_Renovated_Yes' ordinal='20' />
+                  <column datatype='integer' name='Waterfront_View_Yes' ordinal='21' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_1' ordinal='22' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_2' ordinal='23' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_3' ordinal='24' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_4' ordinal='25' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_5' ordinal='26' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_6' ordinal='27' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_7' ordinal='28' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_8' ordinal='29' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_9' ordinal='30' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_4F39033CC500484389625B2E73339056]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='House Age Distribution by Number of Bathrooms, Bedrooms, and Floors' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='House Age Distribution by Number of Bathrooms, Bedrooms, and Floors' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Distribution of House Age by Renovation Status'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Distribution of House Age by Renovation Status</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Transformed_Housing_Data2' name='federated.052uotz0snp4p218ejlew15012v6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.052uotz0snp4p218ejlew15012v6'>
+            <column aggregation='None' caption='Age of House (in Years) (bin)' datatype='integer' name='[Age of House (in Years) (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[Age of House (in Years)]' peg='0' size='10' />
+            </column>
+            <column datatype='integer' name='[Age of House (in Years)]' role='measure' type='quantitative' />
+            <column caption='Ever Renovated Yes' datatype='integer' name='[Ever_Renovated_Yes]' role='measure' type='quantitative' />
+            <column caption='Sale Price' datatype='real' name='[Sale_Price]' role='measure' type='quantitative' />
+            <column caption='Transformed_Housing_Data2.csv' datatype='table' name='[__tableau_internal_object_id__].[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age of House (in Years) (bin)]' derivation='None' name='[none:Age of House (in Years) (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Ever_Renovated_Yes]' derivation='None' name='[none:Ever_Renovated_Yes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sale_Price]' derivation='Count' name='[pcto:cnt:Sale_Price:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.052uotz0snp4p218ejlew15012v6].[none:Ever_Renovated_Yes:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>1</max>
+          </filter>
+          <slices>
+            <column>[federated.052uotz0snp4p218ejlew15012v6].[none:Ever_Renovated_Yes:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.052uotz0snp4p218ejlew15012v6].[none:Age of House (in Years) (bin):ok]' />
+              <wedge-size column='[federated.052uotz0snp4p218ejlew15012v6].[__tableau_internal_object_id__].[cnt:Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608:qk]' />
+              <lod column='[federated.052uotz0snp4p218ejlew15012v6].[pcto:cnt:Sale_Price:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'>Age Group :</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.052uotz0snp4p218ejlew15012v6].[none:Age of House (in Years) (bin):ok]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>Number of Houses :</run>
+                <run>Æ&#10;</run>
+                <run bold='true'>&lt;COUNT(Sale Price)&gt;</run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>Renovated :</run>
+                <run>Æ&#10;</run>
+                <run bold='true'>&lt;Ever Renovated Yes&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.7471270561218262' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <show-full-range>
+          <column>[federated.052uotz0snp4p218ejlew15012v6].[Age of House (in Years) (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{EC1AB536-C303-43C0-9BEF-8E357552B77F}' />
+    </worksheet>
+    <worksheet name='House Age Distribution by Number of Bathrooms, Bedrooms, and Floors'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Bold'>House Age Distribution by Number of Bathrooms,Bedrooms and Floors</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Transformed_Housing_Data2' name='federated.052uotz0snp4p218ejlew15012v6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.052uotz0snp4p218ejlew15012v6'>
+            <column aggregation='None' caption='Age of House (in Years) (bin)' datatype='integer' name='[Age of House (in Years) (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[Age of House (in Years)]' peg='0' size='10' />
+            </column>
+            <column datatype='integer' name='[Age of House (in Years)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[No of Bathrooms]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[No of Bedrooms]' role='measure' type='quantitative' />
+            <column datatype='real' name='[No of Floors]' role='measure' type='quantitative' />
+            <column-instance column='[No of Bathrooms]' derivation='Avg' name='[avg:No of Bathrooms:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[No of Bedrooms]' derivation='Avg' name='[avg:No of Bedrooms:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[No of Floors]' derivation='Avg' name='[avg:No of Floors:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age of House (in Years) (bin)]' derivation='None' name='[none:Age of House (in Years) (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.052uotz0snp4p218ejlew15012v6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.052uotz0snp4p218ejlew15012v6].[avg:No of Bathrooms:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.052uotz0snp4p218ejlew15012v6].[avg:No of Bedrooms:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.052uotz0snp4p218ejlew15012v6].[avg:No of Floors:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.052uotz0snp4p218ejlew15012v6].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.052uotz0snp4p218ejlew15012v6].[Multiple Values]' scope='rows' value='Average' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.052uotz0snp4p218ejlew15012v6].[:Measure Names]' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.052uotz0snp4p218ejlew15012v6].[:Measure Names]' value='House Features'>
+              <formatted-text>
+                <run>House Features</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.052uotz0snp4p218ejlew15012v6].[:Measure Names]' />
+              <text column='[federated.052uotz0snp4p218ejlew15012v6].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.7911050319671631' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.052uotz0snp4p218ejlew15012v6].[Multiple Values]</rows>
+        <cols>([federated.052uotz0snp4p218ejlew15012v6].[none:Age of House (in Years) (bin):ok] / [federated.052uotz0snp4p218ejlew15012v6].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{BA83846B-01B9-4924-B6EC-F00ECF2BEA58}' />
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Transformed_Housing_Data2' name='federated.052uotz0snp4p218ejlew15012v6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.052uotz0snp4p218ejlew15012v6'>
+            <column datatype='real' name='[Area of the House from Basement (in Sqft)]' role='measure' type='quantitative' />
+            <column caption='Sale Price' datatype='real' name='[Sale_Price]' role='measure' type='quantitative' />
+            <column caption='Transformed_Housing_Data2.csv' datatype='table' name='[__tableau_internal_object_id__].[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sale_Price]' derivation='Avg' name='[avg:Sale_Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Area of the House from Basement (in Sqft)]' derivation='Sum' name='[sum:Area of the House from Basement (in Sqft):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.052uotz0snp4p218ejlew15012v6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.052uotz0snp4p218ejlew15012v6].[__tableau_internal_object_id__].[cnt:Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.052uotz0snp4p218ejlew15012v6].[avg:Sale_Price:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.052uotz0snp4p218ejlew15012v6].[sum:Area of the House from Basement (in Sqft):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.052uotz0snp4p218ejlew15012v6].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.052uotz0snp4p218ejlew15012v6].[__tableau_internal_object_id__].[cnt:Transformed_Housing_Data2.csv_5090182449EF44FCA07AB09FF657D608:qk]&quot;</bucket>
+              <bucket>&quot;[federated.052uotz0snp4p218ejlew15012v6].[avg:Sale_Price:qk]&quot;</bucket>
+              <bucket>&quot;[federated.052uotz0snp4p218ejlew15012v6].[sum:Area of the House from Basement (in Sqft):qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.052uotz0snp4p218ejlew15012v6].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.052uotz0snp4p218ejlew15012v6].[:Measure Names]' />
+              <text column='[federated.052uotz0snp4p218ejlew15012v6].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.052uotz0snp4p218ejlew15012v6].[:Measure Names]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{1DDB3DF3-74F7-4EAF-9742-0EC6C5EB2283}' />
+    </worksheet>
+    <worksheet name='Total Sales by Years Since Renovation'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Bold'>House Sales Distribution by Sale Price and Years Since Renovation</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Transformed_Housing_Data2' name='federated.052uotz0snp4p218ejlew15012v6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.052uotz0snp4p218ejlew15012v6'>
+            <column aggregation='None' caption='Sale Price (bin)' datatype='integer' name='[Sale Price (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='4' formula='[Sale_Price]' peg='0' size='50000' />
+            </column>
+            <column caption='Sale Price' datatype='real' name='[Sale_Price]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Years Since Renovation (bin)' datatype='integer' name='[Years Since Renovation (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[Years Since Renovation]' peg='0' size='10' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Years Since Renovation]' role='dimension' type='ordinal' />
+            <column-instance column='[Sale_Price]' derivation='Count' name='[cnt:Sale_Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sale Price (bin)]' derivation='None' name='[none:Sale Price (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Years Since Renovation (bin)]' derivation='None' name='[none:Years Since Renovation (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.052uotz0snp4p218ejlew15012v6].[none:Years Since Renovation (bin):ok]'>
+            <groupfilter function='level-members' level='[none:Years Since Renovation (bin):ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.052uotz0snp4p218ejlew15012v6].[none:Years Since Renovation (bin):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.052uotz0snp4p218ejlew15012v6].[cnt:Sale_Price:qk]' field-type='quantitative' max='2475' min='-40' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.052uotz0snp4p218ejlew15012v6].[cnt:Sale_Price:qk]' scope='rows' value='Number of Houses Sold' />
+            <format attr='width' field='[federated.052uotz0snp4p218ejlew15012v6].[cnt:Sale_Price:qk]' value='60' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.052uotz0snp4p218ejlew15012v6].[none:Years Since Renovation (bin):ok]' />
+              <text column='[federated.052uotz0snp4p218ejlew15012v6].[cnt:Sale_Price:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[Sale Price Range : <[federated.052uotz0snp4p218ejlew15012v6].[none:Sale Price (bin):ok]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'><![CDATA[Number of Houses : <[federated.052uotz0snp4p218ejlew15012v6].[cnt:Sale_Price:qk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>Years Since Renovation :</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.052uotz0snp4p218ejlew15012v6].[none:Years Since Renovation (bin):ok]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.7251380681991577' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.052uotz0snp4p218ejlew15012v6].[cnt:Sale_Price:qk]</rows>
+        <cols>[federated.052uotz0snp4p218ejlew15012v6].[none:Sale Price (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.052uotz0snp4p218ejlew15012v6].[Sale Price (bin)]</column>
+          <column>[federated.052uotz0snp4p218ejlew15012v6].[Years Since Renovation (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{5FAF7FF3-D5D4-4BC5-A216-40DF280405C7}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Bold'>Comprehensive House Price Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='900' maxwidth='1400' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='7' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='10' param='vert' type-v2='layout-flow' w='98858' x='571' y='889'>
+            <zone fixed-size='44' h='5778' id='11' is-fixed='true' type-v2='title' w='98858' x='571' y='889'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='3' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92444' id='8' type-v2='layout-basic' w='98858' x='571' y='6667' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='36778' id='3' name='Sheet 1' show-title='false' w='44286' x='1000' y='8444'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+          </zone-style>
+        </zone>
+        <zone h='36889' id='4' name='Total Sales by Years Since Renovation' w='52786' x='46143' y='8444'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+          </zone-style>
+        </zone>
+        <zone h='50556' id='5' name='Distribution of House Age by Renovation Status' w='44071' x='1071' y='47111'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+          </zone-style>
+        </zone>
+        <zone h='50333' id='6' name='House Age Distribution by Number of Bathrooms, Bedrooms, and Floors' w='52571' x='46214' y='47333'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Tableau Bold'>Comprehensive House Price Analysis</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='18' param='vert' type-v2='layout-flow' w='98858' x='571' y='889'>
+                <zone fixed-size='44' h='5778' id='11' type-v2='title' w='98858' x='571' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36778' id='3' is-fixed='true' name='Sheet 1' show-title='false' w='44286' x='1000' y='8444'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36889' id='4' is-fixed='true' name='Total Sales by Years Since Renovation' w='52786' x='46143' y='8444'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50556' id='5' is-fixed='true' name='Distribution of House Age by Renovation Status' w='44071' x='1071' y='47111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50333' id='6' is-fixed='true' name='House Age Distribution by Number of Bathrooms, Bedrooms, and Floors' w='52571' x='46214' y='47333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0D81FC0B-C462-4DB0-A06F-401AC4C538A1}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='377' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98244' id='7' param='vert' removable='false' type-v2='layout-flow' w='99034' x='483' y='878'>
+            <zone h='98244' id='1' param='vert' removable='false' type-v2='layout-flow' w='99034' x='483' y='878'>
+              <zone fixed-size='129' h='14160' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='99034' x='483' y='878' />
+              <zone h='84084' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='99034' x='483' y='15038'>
+                <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                  <story-points>
+                    <story-point caption='The dataset contains 21,609 houses with an average sale price of ₹511,619 and a total basement area of 38.64 million sq.ft.' captured-sheet='Sheet 1' id='2' />
+                    <story-point caption='Most house sales are concentrated in the ₹250K–₹400K price range, indicating higher demand for moderately priced homes.' captured-sheet='Total Sales by Years Since Renovation' id='1' />
+                    <story-point caption='The majority of houses are 10–50 years old, showing that medium-aged properties dominate the dataset.' captured-sheet='Distribution of House Age by Renovation Status' id='3' />
+                    <story-point caption='Houses generally have 3 bedrooms, 2 bathrooms, and 1–2 floors, with only slight variation across different age groups.' captured-sheet='House Age Distribution by Number of Bathrooms, Bedrooms, and Floors' id='4' />
+                  </story-points>
+                </flipboard>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{4ECF8AED-AFCA-4F00-9BE8-D938C4199CFF}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A2767CAE-889D-43A1-884A-09FEE11EC2EB}' />
+    </window>
+    <window class='worksheet' name='Total Sales by Years Since Renovation'>
+      <cards>
+        <edge name='left'>
+          <strip size='212'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.052uotz0snp4p218ejlew15012v6].[none:Years Since Renovation (bin):ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.052uotz0snp4p218ejlew15012v6].[none:Years Since Renovation (bin):ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A206D946-7D91-41E1-99A6-289878327436}' />
+    </window>
+    <window class='worksheet' name='Distribution of House Age by Renovation Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.052uotz0snp4p218ejlew15012v6].[none:Ever_Renovated_Yes:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.052uotz0snp4p218ejlew15012v6].[none:Age of House (in Years) (bin):ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A79F4184-8E7C-43AF-A434-7E4211BEF19F}' />
+    </window>
+    <window class='worksheet' name='House Age Distribution by Number of Bathrooms, Bedrooms, and Floors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.052uotz0snp4p218ejlew15012v6].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{721B4BBF-B96A-44C2-A2D1-A36776BE95B6}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Distribution of House Age by Renovation Status'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='House Age Distribution by Number of Bathrooms, Bedrooms, and Floors'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Sales by Years Since Renovation'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{8204CFD4-9A43-4A48-99AB-CC3072F46666}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{F8C02CF5-3497-4C0F-AAC1-5E1C51D61903}' />
+    </window>
+  </windows>
+</workbook>
